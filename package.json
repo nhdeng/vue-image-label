@@ -1,0 +1,48 @@
+{
+  "name": "vue-image-label",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-image-label.umd.js",
+  "module": "./dist/vue-image-label.es.js",
+  "./dist/style.css": "./dist/style.css",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-image-label.es.js",
+      "require": "./dist/vue-image-label.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc --declaration --emitDeclarationOnly",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.45",
+    "vue-image-label": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vite-plugin-dts": "2.0.0-beta.3",
+    "vite-plugin-libcss": "^1.0.5",
+    "vue-tsc": "^1.0.24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhdeng/vue-image-label.git"
+  },
+  "keywords": [
+    "vue-label-image",
+    "vue-component"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nhdeng/vue-image-label.git/issues"
+  },
+  "homepage": "https://github.com/nhdeng/vue-image-label.git#readme"
+}
